@@ -29,6 +29,6 @@ jobs:
             - name: pushing the repo
               uses: hisasann/simple-github-auto-push@main
               env:
-                GITHUB_TOKEN: ${{ secrets.APP_TOKEN }}
+                APP_TOKEN: ${{ secrets.APP_TOKEN }}
                 BRANCH_NAME: dev
               

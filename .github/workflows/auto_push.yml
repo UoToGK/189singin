@@ -27,5 +27,7 @@ jobs:
               run: |
                   git commit --allow-empty -m "Auto amazing commit"
             - name: Finilly pushing the repo
-              run: |
-                  git push origin dev
+              uses: UoToGK/${{ github.repository }}@dev
+              with:
+                github_token: ${{ secrets.APP_TOKEN }}
+              

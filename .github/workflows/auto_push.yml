@@ -27,6 +27,8 @@ jobs:
               run: |
                   git commit --allow-empty -m "Auto amazing commit"
             - name: pushing the repo
-              run: |
-                  git push 
+              uses: hisasann/simple-github-auto-push@main
+              env:
+                GITHUB_TOKEN: ${{ secrets.APP_TOKEN }}
+                BRANCH_NAME: dev
               
